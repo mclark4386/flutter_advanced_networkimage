@@ -41,7 +41,7 @@ class AdvancedNetworkImage extends ImageProvider<AdvancedNetworkImage> {
   final double scale;
 
   /// The HTTP headers that will be used with [http] to fetch image from network.
-  final Map<String, String> header;
+  Map<String, String> header;
 
   /// The flag control the disk cache will be used or not.
   final bool useDiskCache;
