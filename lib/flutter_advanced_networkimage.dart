@@ -17,7 +17,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:flutter_advanced_networkimage/utils.dart';
 
 class AdvancedNetworkImage extends ImageProvider<AdvancedNetworkImage> {
-  const AdvancedNetworkImage(
+  AdvancedNetworkImage(
     this.url, {
     this.scale: 1.0,
     this.header,
