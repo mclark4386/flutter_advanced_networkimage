@@ -17,7 +17,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:flutter_advanced_networkimage/utils.dart';
 
 class AdvancedNetworkImage extends ImageProvider<AdvancedNetworkImage> {
-  AdvancedNetworkImage(
+  const AdvancedNetworkImage(
     this.url, {
     this.scale: 1.0,
     this.header,
@@ -41,7 +41,7 @@ class AdvancedNetworkImage extends ImageProvider<AdvancedNetworkImage> {
   final double scale;
 
   /// The HTTP headers that will be used with [http] to fetch image from network.
-  Map<String, String> header;
+  final Map<String, String> header;
 
   /// The flag control the disk cache will be used or not.
   final bool useDiskCache;
